@@ -1,0 +1,1286 @@
+('D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\dist\\UnilabSystem.exe',
+ True,
+ False,
+ False,
+ 'D:\\Dhee Coding '
+ 'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
+ None,
+ False,
+ False,
+ b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
+ b'"urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <trustInfo x'
+ b'mlns="urn:schemas-microsoft-com:asm.v3">\n    <security>\n      <requested'
+ b'Privileges>\n        <requestedExecutionLevel level="asInvoker" uiAccess='
+ b'"false"/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n  '
+ b'<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\n    <'
+ b'application>\n      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f'
+ b'0}"/>\n      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\n '
+ b'     <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\n      <s'
+ b'upportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\n      <supporte'
+ b'dOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\n    </application>\n  <'
+ b'/compatibility>\n  <application xmlns="urn:schemas-microsoft-com:asm.v3">'
+ b'\n    <windowsSettings>\n      <longPathAware xmlns="http://schemas.micros'
+ b'oft.com/SMI/2016/WindowsSettings">true</longPathAware>\n    </windowsSett'
+ b'ings>\n  </application>\n  <dependency>\n    <dependentAssembly>\n      <ass'
+ b'emblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version='
+ b'"6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" langua'
+ b'ge="*"/>\n    </dependentAssembly>\n  </dependency>\n</assembly>',
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'D:\\Dhee Coding '
+ 'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\UnilabSystem.pkg',
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('run',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\run.py',
+   'PYSOURCE'),
+  ('python313.dll',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\python313.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('markupsafe\\_speedups.cp313-win_amd64.pyd',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe\\_speedups.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('bulk_reports\\ABO HEIGHT & WEIGHT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\ABO '
+   'HEIGHT & WEIGHT.docx',
+   'DATA'),
+  ('bulk_reports\\ABO.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\ABO.docx',
+   'DATA'),
+  ('bulk_reports\\ASO.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\ASO.docx',
+   'DATA'),
+  ('bulk_reports\\BT CT PT INR.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\BT CT '
+   'PT INR.docx',
+   'DATA'),
+  ('bulk_reports\\BT CT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\BT '
+   'CT.docx',
+   'DATA'),
+  ('bulk_reports\\CA 125.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CA '
+   '125.docx',
+   'DATA'),
+  ('bulk_reports\\CAL.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CAL.docx',
+   'DATA'),
+  ('bulk_reports\\CALCIUM,MAG.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CALCIUM,MAG.docx',
+   'DATA'),
+  ('bulk_reports\\CALCIUM,PHOS.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CALCIUM,PHOS.docx',
+   'DATA'),
+  ('bulk_reports\\CALCIUM.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CALCIUM.docx',
+   'DATA'),
+  ('bulk_reports\\CBC ,CRP 2-6 YR.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   ',CRP 2-6 YR.docx',
+   'DATA'),
+  ('bulk_reports\\CBC 0.3 TO 0.6 MONTH BABY.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   '0.3 TO 0.6 MONTH BABY.docx',
+   'DATA'),
+  ('bulk_reports\\CBC 0.5 TO 2 YEAR BABY.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   '0.5 TO 2 YEAR BABY.docx',
+   'DATA'),
+  ('bulk_reports\\CBC 01 MONTH BABY.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC 01 '
+   'MONTH BABY.docx',
+   'DATA'),
+  ('bulk_reports\\CBC 2YR TO 6 YR BABY.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   '2YR TO 6 YR BABY.docx',
+   'DATA'),
+  ('bulk_reports\\CBC ABO FEMALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'ABO FEMALE.docx',
+   'DATA'),
+  ('bulk_reports\\CBC ABO MALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'ABO MALE.docx',
+   'DATA'),
+  ('bulk_reports\\CBC CREAT FEMALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'CREAT FEMALE.docx',
+   'DATA'),
+  ('bulk_reports\\CBC CREAT MALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'CREAT MALE.docx',
+   'DATA'),
+  ('bulk_reports\\CBC CRP 18+F.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'CRP 18+F.docx',
+   'DATA'),
+  ('bulk_reports\\CBC CRP 18+M.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'CRP 18+M.docx',
+   'DATA'),
+  ('bulk_reports\\CBC ESR AEC FEMALE .docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'ESR AEC FEMALE .docx',
+   'DATA'),
+  ('bulk_reports\\CBC ESR AEC MALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'ESR AEC MALE.docx',
+   'DATA'),
+  ('bulk_reports\\CBC RA FACTOR 18+F.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC RA '
+   'FACTOR 18+F.docx',
+   'DATA'),
+  ('bulk_reports\\CBC RBS 18 + F.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'RBS 18 + F.docx',
+   'DATA'),
+  ('bulk_reports\\CBC RBS 18+M.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'RBS 18+M.docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH AEC 18 YR+(FEMALE)...docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH AEC 18 YR+(FEMALE)...docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH AEC.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH AEC.docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH CREAT 18 YR + (FEMALE).docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH CREAT 18 YR + (FEMALE).docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH CREAT 18 YR + (MALE).docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH CREAT 18 YR + (MALE).docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH CREAT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH CREAT.docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH ESR 12- 18 YR (FEMALE).docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH ESR 12- 18 YR (FEMALE).docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH ESR 12- 18 YR (MALE).docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH ESR 12- 18 YR (MALE).docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH ESR 18 YR + (F) AEC.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH ESR 18 YR + (F) AEC.docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH ESR 18 YR + (M).docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH ESR 18 YR + (M).docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH ESR 18 YR+(FEMALE).docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH ESR 18 YR+(FEMALE).docx',
+   'DATA'),
+  ('bulk_reports\\CBC WITH ESR 6-12 YR.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC '
+   'WITH ESR 6-12 YR.docx',
+   'DATA'),
+  ('bulk_reports\\CBC.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CBC.docx',
+   'DATA'),
+  ('bulk_reports\\CPK.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CPK.docx',
+   'DATA'),
+  ('bulk_reports\\CREAT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CREAT.docx',
+   'DATA'),
+  ('bulk_reports\\CRP.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CRP.docx',
+   'DATA'),
+  ('bulk_reports\\CULTURE AND SENSITIVITY URINE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\CULTURE AND '
+   'SENSITIVITY URINE.docx',
+   'DATA'),
+  ('bulk_reports\\DENGUE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\DENGUE.docx',
+   'DATA'),
+  ('bulk_reports\\ELECTROLYTES RBS.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\ELECTROLYTES RBS.docx',
+   'DATA'),
+  ('bulk_reports\\ELECTROLYTES RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\ELECTROLYTES RFT.docx',
+   'DATA'),
+  ('bulk_reports\\ELECTROLYTES.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\ELECTROLYTES.docx',
+   'DATA'),
+  ('bulk_reports\\FATIMA BEE LFT RFT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FATIMA '
+   'BEE LFT RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS  PP URINE  HbA1C CHOL.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS  '
+   'PP URINE  HbA1C CHOL.docx',
+   'DATA'),
+  ('bulk_reports\\FBS  PP URINE  HbA1C CREAT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS  '
+   'PP URINE  HbA1C CREAT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS AND PPBS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'AND PPBS.docx',
+   'DATA'),
+  ('bulk_reports\\FBS LFT RFT MALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'LFT RFT MALE.docx',
+   'DATA'),
+  ('bulk_reports\\FBS LIPID HbA1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'LIPID HbA1C.docx',
+   'DATA'),
+  ('bulk_reports\\FBS LIPID RFT WIDAL.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'LIPID RFT WIDAL.docx',
+   'DATA'),
+  ('bulk_reports\\FBS LIPID,RFT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'LIPID,RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP A1C RFT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'A1C RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP CREAT HbA1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'CREAT HbA1C.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP CREAT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'CREAT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP HB RFT LIPID.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'HB RFT LIPID.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP HB.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'HB.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP LIPID HbA1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'LIPID HbA1C.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP LIPID.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'LIPID.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PP URIC ACID.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS PP '
+   'URIC ACID.docx',
+   'DATA'),
+  ('bulk_reports\\FBS PPBS LIPID RFT WIDAL.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'PPBS LIPID RFT WIDAL.docx',
+   'DATA'),
+  ('bulk_reports\\FBS RFT A1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'RFT A1C.docx',
+   'DATA'),
+  ('bulk_reports\\FBS RFT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS '
+   'RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PP .docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PP .docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PP CHOL, URINE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PP CHOL, URINE.docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PP,URINE, HbA1C,CREAT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PP,URINE, HbA1C,CREAT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PP,URINE, HbA1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PP,URINE, HbA1C.docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PPBS & HbA1C RFT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PPBS & HbA1C RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PPBS & HbA1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PPBS & HbA1C.docx',
+   'DATA'),
+  ('bulk_reports\\FBS, PPBS RFT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS, '
+   'PPBS RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,LIPID,RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,LIPID,RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PP,CREAT,SBT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PP,CREAT,SBT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PP,RFT NEW.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PP,RFT NEW.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PP,SBT,D,I.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PP,SBT,D,I.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PP,TFT VIJAYA.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PP,TFT VIJAYA.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PP,TFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PP,TFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PP,TSH.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PP,TSH.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PPBS,LIPID PROFILE HIGH TGL.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PPBS,LIPID PROFILE '
+   'HIGH TGL.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,PPLIPID,RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,PPLIPID,RFT.docx',
+   'DATA'),
+  ('bulk_reports\\FBS,TSH -.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS,TSH -.docx',
+   'DATA'),
+  ('bulk_reports\\FBS.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FBS.docx',
+   'DATA'),
+  ('bulk_reports\\FT3,FT4,TSH.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\FT3,FT4,TSH.docx',
+   'DATA'),
+  ('bulk_reports\\GCT 75 GMS GLUCOSE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\GCT 75 '
+   'GMS GLUCOSE.docx',
+   'DATA'),
+  ('bulk_reports\\HB ABO.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HB '
+   'ABO.docx',
+   'DATA'),
+  ('bulk_reports\\HB CREAT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HB '
+   'CREAT.docx',
+   'DATA'),
+  ('bulk_reports\\HB RBS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HB '
+   'RBS.docx',
+   'DATA'),
+  ('bulk_reports\\HB SBT D I.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HB SBT '
+   'D I.docx',
+   'DATA'),
+  ('bulk_reports\\HB TSH.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HB '
+   'TSH.docx',
+   'DATA'),
+  ('bulk_reports\\HB.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HB.docx',
+   'DATA'),
+  ('bulk_reports\\HBsAg.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HBsAg.docx',
+   'DATA'),
+  ('bulk_reports\\HIV I & II ,HBsAg ,RBS NEW.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HIV I '
+   '& II ,HBsAg ,RBS NEW.docx',
+   'DATA'),
+  ('bulk_reports\\HIV I & II ,HBsAg ,RBS,ABO.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HIV I '
+   '& II ,HBsAg ,RBS,ABO.docx',
+   'DATA'),
+  ('bulk_reports\\HIV I & II ,HBsAg RBS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HIV I '
+   '& II ,HBsAg RBS.docx',
+   'DATA'),
+  ('bulk_reports\\HIV I & II ,HBsAg,HCV.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HIV I '
+   '& II ,HBsAg,HCV.docx',
+   'DATA'),
+  ('bulk_reports\\HIV I & II ,HBsAg.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HIV I '
+   '& II ,HBsAg.docx',
+   'DATA'),
+  ('bulk_reports\\HIV I & II.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HIV I '
+   '& II.docx',
+   'DATA'),
+  ('bulk_reports\\HbA1C.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\HbA1C.docx',
+   'DATA'),
+  ('bulk_reports\\IgE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\IgE.docx',
+   'DATA'),
+  ('bulk_reports\\KFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\KFT.docx',
+   'DATA'),
+  ('bulk_reports\\LFT NEW FBS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LFT '
+   'NEW FBS.docx',
+   'DATA'),
+  ('bulk_reports\\LFT NEW RBS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LFT '
+   'NEW RBS.docx',
+   'DATA'),
+  ('bulk_reports\\LFT NEW.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LFT '
+   'NEW.docx',
+   'DATA'),
+  ('bulk_reports\\LFT RFT FEMALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LFT '
+   'RFT FEMALE.docx',
+   'DATA'),
+  ('bulk_reports\\LFT RFT MALE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LFT '
+   'RFT MALE.docx',
+   'DATA'),
+  ('bulk_reports\\LIPID PROFILE HIGH TGL.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LIPID '
+   'PROFILE HIGH TGL.docx',
+   'DATA'),
+  ('bulk_reports\\LIPID PROFILE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LIPID '
+   'PROFILE.docx',
+   'DATA'),
+  ('bulk_reports\\LIPID,RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\LIPID,RFT.docx',
+   'DATA'),
+  ('bulk_reports\\MANTOUX TEST.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\MANTOUX TEST.docx',
+   'DATA'),
+  ('bulk_reports\\MP, DENGUE, CHIKUNGUNYA.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\MP, '
+   'DENGUE, CHIKUNGUNYA.docx',
+   'DATA'),
+  ('bulk_reports\\MP, DENGUE, WIDAL,CRP.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\MP, '
+   'DENGUE, WIDAL,CRP.docx',
+   'DATA'),
+  ('bulk_reports\\MP, DENGUE, WIDAL.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\MP, '
+   'DENGUE, WIDAL.docx',
+   'DATA'),
+  ('bulk_reports\\OGTT 50 GM.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\OGTT '
+   '50 GM.docx',
+   'DATA'),
+  ('bulk_reports\\PREGNANCY TEST.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\PREGNANCY TEST.docx',
+   'DATA'),
+  ('bulk_reports\\PROLACTIN.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\PROLACTIN.docx',
+   'DATA'),
+  ('bulk_reports\\PS STUDY.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\PS '
+   'STUDY.docx',
+   'DATA'),
+  ('bulk_reports\\PT INR,aPTT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\PT '
+   'INR,aPTT.docx',
+   'DATA'),
+  ('bulk_reports\\PT INR.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\PT '
+   'INR.docx',
+   'DATA'),
+  ('bulk_reports\\PT,aPTT,BT,CT,ABO,RBS.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\PT,aPTT,BT,CT,ABO,RBS.docx',
+   'DATA'),
+  ('bulk_reports\\RA FACTOR ,ASO.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RA '
+   'FACTOR ,ASO.docx',
+   'DATA'),
+  ('bulk_reports\\RA FACTOR.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RA '
+   'FACTOR.docx',
+   'DATA'),
+  ('bulk_reports\\RBS ,PREG.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS '
+   ',PREG.docx',
+   'DATA'),
+  ('bulk_reports\\RBS RFT A1C.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS '
+   'RFT A1C.docx',
+   'DATA'),
+  ('bulk_reports\\RBS SBT D I.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS '
+   'SBT D I.docx',
+   'DATA'),
+  ('bulk_reports\\RBS URINE COPM.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS '
+   'URINE COPM.docx',
+   'DATA'),
+  ('bulk_reports\\RBS, CHOL, TGL, SBT, D, I, OT, PT, CRP.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS, '
+   'CHOL, TGL, SBT, D, I, OT, PT, CRP.docx',
+   'DATA'),
+  ('bulk_reports\\RBS,RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS,RFT.docx',
+   'DATA'),
+  ('bulk_reports\\RBS,URINE COMPLETE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS,URINE '
+   'COMPLETE.docx',
+   'DATA'),
+  ('bulk_reports\\RBS.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RBS.docx',
+   'DATA'),
+  ('bulk_reports\\RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\RFT.docx',
+   'DATA'),
+  ('bulk_reports\\SBT, D, I, BS,BP.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SBT, '
+   'D, I, BS,BP.docx',
+   'DATA'),
+  ('bulk_reports\\SBT, D, I,.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SBT, '
+   'D, I,.docx',
+   'DATA'),
+  ('bulk_reports\\SBT, D, I,WIDAL,RBS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SBT, '
+   'D, I,WIDAL,RBS.docx',
+   'DATA'),
+  ('bulk_reports\\SBT, D, I,WIDAL.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SBT, '
+   'D, I,WIDAL.docx',
+   'DATA'),
+  ('bulk_reports\\SEEMA RBS SBT D I.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SEEMA '
+   'RBS SBT D I.docx',
+   'DATA'),
+  ('bulk_reports\\SERUM ELECTROLYTES.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SERUM '
+   'ELECTROLYTES.docx',
+   'DATA'),
+  ('bulk_reports\\SGOT SGPT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SGOT '
+   'SGPT.docx',
+   'DATA'),
+  ('bulk_reports\\SPUTUM FOR AFB.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\SPUTUM '
+   'FOR AFB.docx',
+   'DATA'),
+  ('bulk_reports\\STOOL ROUTINE NEW.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\STOOL '
+   'ROUTINE NEW.docx',
+   'DATA'),
+  ('bulk_reports\\TFT HB.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TFT '
+   'HB.docx',
+   'DATA'),
+  ('bulk_reports\\TFT IKON.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TFT '
+   'IKON.docx',
+   'DATA'),
+  ('bulk_reports\\TFT VIJAYA NEW .docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TFT '
+   'VIJAYA NEW .docx',
+   'DATA'),
+  ('bulk_reports\\TFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TFT.docx',
+   'DATA'),
+  ('bulk_reports\\TOTAL COUNT.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TOTAL '
+   'COUNT.docx',
+   'DATA'),
+  ('bulk_reports\\TP,ALB,CAL.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TP,ALB,CAL.docx',
+   'DATA'),
+  ('bulk_reports\\TSH VIJAYA.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TSH '
+   'VIJAYA.docx',
+   'DATA'),
+  ('bulk_reports\\TSH,RFT.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TSH,RFT.docx',
+   'DATA'),
+  ('bulk_reports\\TSH.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\TSH.docx',
+   'DATA'),
+  ('bulk_reports\\U CULTURE AND SENSITIVITY URINE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\U '
+   'CULTURE AND SENSITIVITY URINE.docx',
+   'DATA'),
+  ('bulk_reports\\UREA CREAT NA K+.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\UREA '
+   'CREAT NA K+.docx',
+   'DATA'),
+  ('bulk_reports\\URINE COMP KETONE BODIES.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'COMP KETONE BODIES.docx',
+   'DATA'),
+  ('bulk_reports\\URINE COMP NITRATE  POS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'COMP NITRATE  POS.docx',
+   'DATA'),
+  ('bulk_reports\\URINE COMP NITRATE ,KETONE POS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'COMP NITRATE ,KETONE POS.docx',
+   'DATA'),
+  ('bulk_reports\\URINE COMP,KETONE POS.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'COMP,KETONE POS.docx',
+   'DATA'),
+  ('bulk_reports\\URINE COMPLETE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'COMPLETE.docx',
+   'DATA'),
+  ('bulk_reports\\URINE CULTURE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'CULTURE.docx',
+   'DATA'),
+  ('bulk_reports\\URINE ROUTINE.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\URINE '
+   'ROUTINE.docx',
+   'DATA'),
+  ('bulk_reports\\VITAMIN B12.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\VITAMIN B12.docx',
+   'DATA'),
+  ('bulk_reports\\VITAMIN D, B12.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\VITAMIN D, B12.docx',
+   'DATA'),
+  ('bulk_reports\\VITAMIN D.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\VITAMIN D.docx',
+   'DATA'),
+  ('bulk_reports\\VITAMIN DVIJAYA .docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\VITAMIN DVIJAYA .docx',
+   'DATA'),
+  ('bulk_reports\\WELFLIX.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WELFLIX.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL CRP CHIKUNGUNYA.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL '
+   'CRP CHIKUNGUNYA.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL MP SBT D I.docx',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL '
+   'MP SBT D I.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP RBS RFT RA FACTOR.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP RBS RFT RA '
+   'FACTOR.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP RBS.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP RBS.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP SBT D I.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP SBT D I.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP,DENGUE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP,DENGUE.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP,RBS,DENGUE,MP.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP,RBS,DENGUE,MP.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP,RBS,DENGUE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP,RBS,DENGUE.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,CRP.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,CRP.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,DENGUE,MP.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,DENGUE,MP.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,DENGUE.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,DENGUE.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL,RBS,CRP.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL,RBS,CRP.docx',
+   'DATA'),
+  ('bulk_reports\\WIDAL.docx',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\WIDAL.docx',
+   'DATA'),
+  ('bulk_reports\\extracted_tests.json',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\bulk_reports\\extracted_tests.json',
+   'DATA'),
+  ('database\\schema.sql',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\database\\schema.sql',
+   'DATA'),
+  ('mysql\\connector\\__init__.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\__init__.py',
+   'DATA'),
+  ('mysql\\connector\\abstracts.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\abstracts.py',
+   'DATA'),
+  ('mysql\\connector\\authentication.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\authentication.py',
+   'DATA'),
+  ('mysql\\connector\\charsets.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\charsets.py',
+   'DATA'),
+  ('mysql\\connector\\connection.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\connection.py',
+   'DATA'),
+  ('mysql\\connector\\connection_cext.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\connection_cext.py',
+   'DATA'),
+  ('mysql\\connector\\constants.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\constants.py',
+   'DATA'),
+  ('mysql\\connector\\conversion.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\conversion.py',
+   'DATA'),
+  ('mysql\\connector\\cursor.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\cursor.py',
+   'DATA'),
+  ('mysql\\connector\\cursor_cext.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\cursor_cext.py',
+   'DATA'),
+  ('mysql\\connector\\custom_types.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\custom_types.py',
+   'DATA'),
+  ('mysql\\connector\\dbapi.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\dbapi.py',
+   'DATA'),
+  ('mysql\\connector\\django\\__init__.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\__init__.py',
+   'DATA'),
+  ('mysql\\connector\\django\\base.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\base.py',
+   'DATA'),
+  ('mysql\\connector\\django\\client.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\client.py',
+   'DATA'),
+  ('mysql\\connector\\django\\compiler.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\compiler.py',
+   'DATA'),
+  ('mysql\\connector\\django\\creation.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\creation.py',
+   'DATA'),
+  ('mysql\\connector\\django\\features.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\features.py',
+   'DATA'),
+  ('mysql\\connector\\django\\introspection.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\introspection.py',
+   'DATA'),
+  ('mysql\\connector\\django\\operations.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\operations.py',
+   'DATA'),
+  ('mysql\\connector\\django\\schema.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\schema.py',
+   'DATA'),
+  ('mysql\\connector\\django\\validation.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\django\\validation.py',
+   'DATA'),
+  ('mysql\\connector\\errorcode.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\errorcode.py',
+   'DATA'),
+  ('mysql\\connector\\errors.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\errors.py',
+   'DATA'),
+  ('mysql\\connector\\locales\\__init__.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\locales\\__init__.py',
+   'DATA'),
+  ('mysql\\connector\\locales\\eng\\__init__.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\__init__.py',
+   'DATA'),
+  ('mysql\\connector\\locales\\eng\\client_error.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\locales\\eng\\client_error.py',
+   'DATA'),
+  ('mysql\\connector\\logger.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\logger.py',
+   'DATA'),
+  ('mysql\\connector\\network.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\network.py',
+   'DATA'),
+  ('mysql\\connector\\opentelemetry\\__init__.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\__init__.py',
+   'DATA'),
+  ('mysql\\connector\\opentelemetry\\constants.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\constants.py',
+   'DATA'),
+  ('mysql\\connector\\opentelemetry\\context_propagation.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\context_propagation.py',
+   'DATA'),
+  ('mysql\\connector\\opentelemetry\\instrumentation.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\opentelemetry\\instrumentation.py',
+   'DATA'),
+  ('mysql\\connector\\optionfiles.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\optionfiles.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\__init__.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\__init__.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\authentication_kerberos_client.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_kerberos_client.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\authentication_ldap_sasl_client.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_ldap_sasl_client.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\authentication_oci_client.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_oci_client.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\authentication_webauthn_client.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\authentication_webauthn_client.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\caching_sha2_password.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\caching_sha2_password.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\mysql_clear_password.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\mysql_clear_password.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\mysql_native_password.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\mysql_native_password.py',
+   'DATA'),
+  ('mysql\\connector\\plugins\\sha256_password.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\plugins\\sha256_password.py',
+   'DATA'),
+  ('mysql\\connector\\pooling.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\pooling.py',
+   'DATA'),
+  ('mysql\\connector\\protocol.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\protocol.py',
+   'DATA'),
+  ('mysql\\connector\\py.typed',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\py.typed',
+   'DATA'),
+  ('mysql\\connector\\types.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\types.py',
+   'DATA'),
+  ('mysql\\connector\\utils.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\utils.py',
+   'DATA'),
+  ('mysql\\connector\\version.py',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\mysql\\connector\\version.py',
+   'DATA'),
+  ('static\\css\\animations.css',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\css\\animations.css',
+   'DATA'),
+  ('static\\css\\main.css',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\css\\main.css',
+   'DATA'),
+  ('static\\images\\lab-bg.jpg',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\images\\lab-bg.jpg',
+   'DATA'),
+  ('static\\images\\pathalogist-signature.png',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\images\\pathalogist-signature.png',
+   'DATA'),
+  ('static\\images\\technician-signature.png',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\images\\technician-signature.png',
+   'DATA'),
+  ('static\\images\\unilab-logo.png',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\images\\unilab-logo.png',
+   'DATA'),
+  ('static\\images\\watermark.png',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\images\\watermark.png',
+   'DATA'),
+  ('static\\js\\animations.js',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\js\\animations.js',
+   'DATA'),
+  ('static\\js\\api.js',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\static\\js\\api.js',
+   'DATA'),
+  ('static\\js\\auth.js',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\static\\js\\auth.js',
+   'DATA'),
+  ('static\\js\\dashboard.js',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\static\\js\\dashboard.js',
+   'DATA'),
+  ('static\\js\\ui.js',
+   'D:\\Dhee Coding Lab\\Projects\\diagnostic_lab_system\\static\\js\\ui.js',
+   'DATA'),
+  ('templates\\dashboard.html',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\templates\\dashboard.html',
+   'DATA'),
+  ('templates\\index.html',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\templates\\index.html',
+   'DATA'),
+  ('templates\\print_report.html',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\templates\\print_report.html',
+   'DATA'),
+  ('templates\\setup.html',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\templates\\setup.html',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.7.1.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\METADATA',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-3.0.1.dist-info\\METADATA',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\werkzeug-3.0.1.dist-info\\METADATA',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\INSTALLER',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.3.3.dist-info\\INSTALLER',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\click-8.3.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\WHEEL',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('click-8.3.3.dist-info\\licenses\\LICENSE.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\click-8.3.3.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\licenses\\LICENSE.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\entry_points.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\REQUESTED',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('werkzeug-3.0.1.dist-info\\LICENSE.rst',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\werkzeug-3.0.1.dist-info\\LICENSE.rst',
+   'DATA'),
+  ('werkzeug-3.0.1.dist-info\\INSTALLER',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\werkzeug-3.0.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\LICENSE.rst',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\LICENSE.rst',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\METADATA',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\METADATA',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\WHEEL',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-3.0.1.dist-info\\REQUESTED',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\werkzeug-3.0.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('werkzeug-3.0.1.dist-info\\WHEEL',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\werkzeug-3.0.1.dist-info\\WHEEL',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\INSTALLER',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.3.3.dist-info\\METADATA',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\click-8.3.3.dist-info\\METADATA',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\METADATA',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\WHEEL',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\WHEEL',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\RECORD',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\RECORD',
+   'DATA'),
+  ('markupsafe-3.0.3.dist-info\\top_level.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\markupsafe-3.0.3.dist-info\\top_level.txt',
+   'DATA'),
+  ('click-8.3.3.dist-info\\RECORD',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\click-8.3.3.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.0.0.dist-info\\RECORD',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\flask-3.0.0.dist-info\\RECORD',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\RECORD',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('werkzeug-3.0.1.dist-info\\RECORD',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\werkzeug-3.0.1.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.3.3.dist-info\\WHEEL',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\click-8.3.3.dist-info\\WHEEL',
+   'DATA'),
+  ('base_library.zip',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\build\\UnilabSystem\\base_library.zip',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1778186277,
+ [('run.exe',
+   'D:\\Dhee Coding '
+   'Lab\\Projects\\diagnostic_lab_system\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
+   'EXECUTABLE')],
+ 'C:\\Users\\syeda\\AppData\\Local\\Programs\\Python\\Python313\\python313.dll')

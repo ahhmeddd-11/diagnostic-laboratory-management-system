@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Diagnostic System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body class="login-body">
+    <div class="glass-panel login-card" style="position: relative;">
+        <!-- Simple Login Form -->
+        <div class="logo-area">    <h1>Unilab</h1>
+            <p>Diagnostic Management System</p>
+        </div>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="admin@lab.com" required style="width: 100%; padding: 14px 16px; border: 1px solid var(--surface-border); border-radius: 8px; background: var(--input-bg); color: var(--text-primary); transition: all 0.3s var(--ease-out-cubic);">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" placeholder="••••••••" required style="width: 100%; padding: 14px 45px 14px 16px; border: 1px solid var(--surface-border); border-radius: 8px; background: var(--input-bg); color: var(--text-primary); transition: all 0.3s var(--ease-out-cubic);">
+                    <button type="button" id="toggle-password" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; color: var(--text-secondary); display: flex; align-items: center; justify-content: center; padding: 4px;">
+                        <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <svg id="eye-off-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="error-message" class="error-text hidden"></div>
+            <button type="submit" class="btn-primary" id="login-btn">
+                <span>Sign In</span>
+                <div class="loader hidden" id="login-loader"></div>
+            </button>
+        </form>
+    </div>
+    <footer class="app-footer" style="position: absolute; bottom: 0; width: 100%; border: none; background: transparent;">
+        <span class="copyright">&copy; 2026 All Rights Reserved</span>
+        <span class="separator">|</span>
+        <span class="developer-credit">Developed by <strong>Syed Ahmed Ali</strong> <span class="badge">Python Fullstack Engineer</span></span>
+        <span class="separator">|</span>
+        <a href="mailto:ahhmeddd.1109@gmail.com" class="footer-email">ahhmeddd.1109@gmail.com</a>
+    </footer>
+
+    <script type="module" src="{{ url_for('static', filename='js/auth.js') }}"></script>
+</body>
+</html>

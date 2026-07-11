@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilab - First Time Setup</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, var(--bg-color), #1a1c29);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        .setup-container {
+            background: var(--surface-color);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--surface-border);
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            z-index: 10;
+            transition: all 0.4s ease;
+        }
+
+        .brand-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .brand-logo h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .step-container {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .step-container.active {
+            display: block;
+        }
+
+        .form-desc {
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .input-group input {
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--surface-border);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .input-group input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+
+        .btn-large {
+            width: 100%;
+            padding: 14px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Loading Spinner */
+        .loader-wrapper {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(99, 102, 241, 0.2);
+            border-top: 5px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        .loader-text {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .loader-subtext {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            height: 20px;
+        }
+
+        /* Success Animation */
+        .success-checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--success);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 20px;
+            animation: bounceIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Abstract shapes */
+        .shape {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.4;
+            animation: float 20s infinite ease-in-out alternate;
+        }
+        .shape-1 { top: -10%; left: -10%; width: 400px; height: 400px; background: var(--primary); }
+        .shape-2 { bottom: -10%; right: -10%; width: 500px; height: 500px; background: #8b5cf6; animation-delay: -5s; }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, 50px) scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+
+    <div class="setup-container">
+        <div class="brand-logo">
+            <h1>🔬 Unilab Setup</h1>
+        </div>
+
+        <!-- Step 1: Configuration Form -->
+        <div id="step-form" class="step-container active">
+            <p class="form-desc">Welcome! To begin, please configure your MySQL database connection. We will build the tables and seed default data automatically.</p>
+            
+            <form id="setup-form">
+                <div class="input-group">
+                    <label>MySQL Host</label>
+                    <input type="text" id="db-host" value="localhost" required>
+                </div>
+                <div class="input-group">
+                    <label>MySQL Username</label>
+                    <input type="text" id="db-user" value="root" required>
+                </div>
+                <div class="input-group">
+                    <label>MySQL Password</label>
+                    <input type="password" id="db-pw" placeholder="Leave blank if no password">
+                </div>
+                <div class="input-group">
+                    <label>Database Name</label>
+                    <input type="text" id="db-name" value="diagnostic_lab" required>
+                </div>
+
+                <div id="setup-error" class="error-text hidden" style="text-align: center; margin-bottom: 15px;"></div>
+
+                <button type="submit" class="btn-primary btn-large">Connect & Install</button>
+            </form>
+        </div>
+
+        <!-- Step 2: Loading State -->
+        <div id="step-loading" class="step-container">
+            <div class="loader-wrapper">
+                <div class="spinner"></div>
+                <div class="loader-text">Configuring System...</div>
+                <div class="loader-subtext" id="loading-msg">Connecting to database...</div>
+            </div>
+        </div>
+
+        <!-- Step 3: Success State -->
+        <div id="step-success" class="step-container" style="text-align: center;">
+            <div class="success-checkmark">✓</div>
+            <h2 style="margin-bottom: 10px; color: var(--text-primary);">Setup Complete!</h2>
+            <p class="form-desc" style="margin-bottom: 25px;">Database initialized, tables created, and 176 default tests seeded successfully.</p>
+            
+            <div style="background: var(--nav-active-bg); padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: left; font-size: 0.9rem;">
+                <p style="margin: 0 0 5px 0;"><strong>Default Admin Login:</strong></p>
+                <p style="margin: 0; color: var(--text-secondary);">Email: admin@lab.com</p>
+                <p style="margin: 0; color: var(--text-secondary);">Password: admin123</p>
+            </div>
+
+            <button onclick="window.location.href='/'" class="btn-primary btn-large">Launch Application</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('setup-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const host = document.getElementById('db-host').value;
+            const user = document.getElementById('db-user').value;
+            const password = document.getElementById('db-pw').value;
+            const database = document.getElementById('db-name').value;
+            const errEl = document.getElementById('setup-error');
+            
+            errEl.classList.add('hidden');
+            
+            // Switch to loading
+            document.getElementById('step-form').classList.remove('active');
+            document.getElementById('step-loading').classList.add('active');
+            
+            // Animate loading messages
+            const msgs = ['Authenticating with MySQL...', 'Creating database tables...', 'Seeding 176 lab tests...', 'Finalizing configuration...'];
+            let msgIdx = 0;
+            const msgInterval = setInterval(() => {
+                msgIdx = Math.min(msgIdx + 1, msgs.length - 1);
+                document.getElementById('loading-msg').textContent = msgs[msgIdx];
+            }, 1200);
+
+            try {
+                const res = await fetch('/api/setup/initialize', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ host, user, password, database })
+                });
+                
+                const data = await res.json();
+                clearInterval(msgInterval);
+                
+                if (!res.ok) throw new Error(data.error || 'Installation failed');
+                
+                // Show success
+                setTimeout(() => {
+                    document.getElementById('step-loading').classList.remove('active');
+                    document.getElementById('step-success').classList.add('active');
+                }, 500);
+
+            } catch (err) {
+                clearInterval(msgInterval);
+                document.getElementById('step-loading').classList.remove('active');
+                document.getElementById('step-form').classList.add('active');
+                errEl.textContent = err.message;
+                errEl.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
