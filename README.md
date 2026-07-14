@@ -1,1 +1,0 @@
-# diagnostic-laboratory-management-system
