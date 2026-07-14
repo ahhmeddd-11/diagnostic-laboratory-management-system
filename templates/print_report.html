@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Report - Print</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: black;
+            background: transparent;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #1a365d;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text {
+            color: #b91c1c;
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .logo-sub {
+            color: #1e3a8a;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .header-right {
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #1e3a8a;
+        }
+
+        .header-right strong {
+            font-size: 1rem;
+        }
+
+        .patient-info-grid {
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto auto;
+            margin-bottom: 30px;
+            border: 2px solid #1e3a8a;
+        }
+
+        .pt-grid-row {
+            display: grid;
+            grid-template-columns: 20% 50% 15% 15%;
+        }
+
+        .pt-grid-row>div {
+            border: 1px solid #1e3a8a;
+            padding: 8px 12px;
+            font-size: 0.95rem;
+        }
+
+        .category-title {
+            text-align: center;
+            font-weight: 700;
+            text-decoration: underline;
+            margin: 20px 0 15px 0;
+            font-size: 1.1rem;
+        }
+
+        .tests-grid {
+            width: 85%;
+            margin: 0 auto 40px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tests-grid-header,
+        .tests-grid-row {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            page-break-inside: avoid;
+        }
+
+        .tests-grid-header>div {
+            text-align: left;
+            padding: 10px 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .tests-grid-row>div {
+            padding: 8px 20px;
+            font-size: 0.95rem;
+        }
+
+        .tests-grid .abnormal-result {
+            font-weight: bold;
+        }
+
+        .signature-area {
+            margin-top: 60px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .signature-line {
+            display: inline-block;
+            border-top: 1px solid black;
+            padding-top: 5px;
+            font-weight: 700;
+            text-align: center;
+            width: 200px;
+        }
+
+        .no-header-spacer {
+            padding-top: 225px;
+            /* ~9 lines of empty space */
+        }
+
+        /* Watermark Styles */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            background-image: url('/static/images/watermark.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.50;
+            /* Light opacity so text remains readable */
+            z-index: -1;
+            /* Place behind text */
+            pointer-events: none;
+            /* Let clicks pass through */
+            /* Ensures it prints in browsers that disable background graphics by default */
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body id="print-body">
+    <div id="print-toolbar" class="no-print" style="position: fixed; top: 20px; right: 20px; z-index: 9999; display: flex; gap: 10px; background: #1f2937; padding: 10px 15px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); border: 1px solid #374151;">
+        <button onclick="window.triggerPrint()"
+            style="padding: 8px 16px; cursor: pointer; background: #38bdf8; color: #0f172a; border: none; border-radius: 6px; font-weight: bold; font-family: 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; gap: 6px;">
+            🖨 Print Again
+        </button>
+        <button onclick="window.location.replace('/dashboard')"
+            style="padding: 8px 16px; cursor: pointer; background: #4b5563; color: #f9fafb; border: none; border-radius: 6px; font-weight: bold; font-family: 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; gap: 6px;">
+            ← Back to Dashboard
+        </button>
+    </div>
+
+    <!-- Master Layout Table to reserve footer space -->
+    <table style="width: 100%; border: none;">
+        <thead>
+            <tr>
+                <td>
+                    <div style="height: 5px;"></div>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="header" id="doc-header">
+                        <div class="header-left">
+                            <img src="/static/images/unilab-logo.png" alt="Unilab Logo"
+                                style="height: 95px; width: auto; object-fit: contain;">
+                            <div>
+                                <h1 class="logo-text">UNILAB</h1>
+                                <h2 class="logo-sub">DIAGNOSTIC CENTRE</h2>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <strong>Beside Dr. H.S. Bablad Clinic</strong><br>
+                            No. 11-1041/34/GF/12B, Shop No. 4,<br>
+                            Near Moraji Desai Girls Residential School,<br>
+                            Madina Colony, Jeelanabad,<br>
+                            Kalaburagi 585103<br>
+                            📞 9035041760<br>
+                            ✉️ ziakhazi0101@gmail.com
+                        </div>
+                    </div>
+
+                    <div class="patient-info-grid">
+                        <div class="pt-grid-row">
+                            <div>Lab NO: <span id="pt-id"></span></div>
+                            <div>Pt. Name: <strong id="pt-name"></strong></div>
+                            <div>Age: <span id="pt-age"></span></div>
+                            <div>Sex: <span id="pt-sex"></span></div>
+                        </div>
+                        <div class="pt-grid-row">
+                            <div style="grid-column: span 3; text-align: center;">Ref Dr: <span id="pt-dr"></span></div>
+                            <div>Date: <span id="pt-date"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="category-title">LABORATORY INVESTIGATIONS</div>
+
+                    <div id="tests-container">
+                        <!-- Injected by JS -->
+                    </div>
+
+                    <div class="signature-area" style="display: flex; justify-content: space-between; margin-top: 50px; padding: 0 40px; text-align: center;">
+                        
+                        <!-- Pathologist Signature (Left) -->
+                        <div id="pathologist-sig-container" style="display: none; flex-direction: column; align-items: center;">
+                            <img src="/static/images/pathalogist-signature.png" alt="Pathologist Signature" style="height: 60px; margin-bottom: 5px; object-fit: contain;">
+                            <div style="border-top: 1px solid black; padding-top: 5px; font-weight: 700; width: 200px;">
+                                Pathologist Signature
+                            </div>
+                        </div>
+
+                        <!-- Technician Signature (Right) -->
+                        <div style="display: flex; flex-direction: column; align-items: center; margin-left: auto;">
+                            <img src="/static/images/technician-signature.png" alt="Technician Signature" style="height: 60px; margin-bottom: 5px; object-fit: contain;">
+                            <div style="border-top: 1px solid black; padding-top: 5px; font-weight: 700; width: 200px;">
+                                Technician Signature
+                            </div>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="module">
+        import { fetchAPI } from '/static/js/api.js';
+
+        window.triggerPrint = () => {
+            const toolbar = document.getElementById('print-toolbar');
+            if (toolbar) {
+                toolbar.style.display = 'none';
+            }
+            const restoreToolbar = () => {
+                if (toolbar) {
+                    toolbar.style.display = 'flex';
+                }
+                window.onafterprint = null;
+            };
+            window.onafterprint = restoreToolbar;
+            window.print();
+            restoreToolbar();
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const reportId = urlParams.get('id');
+            const showHeader = urlParams.get('header') !== 'false';
+            const showPathologist = urlParams.get('pathologist') === 'true';
+
+            if (showPathologist) {
+                document.getElementById('pathologist-sig-container').style.display = 'flex';
+            }
+
+            if (!showHeader) {
+                document.getElementById('doc-header').style.display = 'none';
+                // Inject @page top margin so the letterhead space is reserved on EVERY page
+                const style = document.createElement('style');
+                style.innerHTML = `@media print { @page { margin-top: 55mm; } }`;
+                document.head.appendChild(style);
+            }
+
+            if (!reportId) {
+                alert('No report ID specified.');
+                return;
+            }
+
+            try {
+                const report = await fetchAPI(`/reports/${reportId}`);
+
+                // Fill patient info
+                document.getElementById('pt-id').textContent = String(report.id).padStart(2, '0');
+                document.getElementById('pt-name').textContent = report.patient_name.toUpperCase();
+                document.getElementById('pt-age').textContent = report.age;
+                document.getElementById('pt-sex').textContent = report.gender.toUpperCase();
+                document.getElementById('pt-dr').textContent = report.referred_doctor ? report.referred_doctor.toUpperCase() : 'SELF';
+
+                // Format date as DD/MM/YYYY
+                const dt = report.report_date ? new Date(report.report_date) : new Date(report.created_at);
+                const dateStr = dt.getDate().toString().padStart(2, '0') + '/' +
+                    (dt.getMonth() + 1).toString().padStart(2, '0') + '/' +
+                    dt.getFullYear();
+                document.getElementById('pt-date').textContent = dateStr;
+
+                // Fill tests
+                const container = document.getElementById('tests-container');
+                container.innerHTML = '';
+
+                // Group by test name
+                const groupedDetails = {};
+                report.details.forEach(d => {
+                    if (!groupedDetails[d.test_name]) {
+                        groupedDetails[d.test_name] = [];
+                    }
+                    groupedDetails[d.test_name].push(d);
+                });
+
+                Object.keys(groupedDetails).forEach(testName => {
+                    // Add Profile Header
+                    const profileHeader = document.createElement('div');
+                    profileHeader.style.textAlign = 'center';
+                    profileHeader.style.fontWeight = 'bold';
+                    profileHeader.style.textDecoration = 'underline';
+                    profileHeader.style.fontSize = '1.05rem';
+                    profileHeader.style.color = '#1a365d';
+                    profileHeader.style.marginBottom = '10px';
+                    profileHeader.style.marginTop = '15px';
+                    profileHeader.innerText = testName.toUpperCase();
+                    container.appendChild(profileHeader);
+
+                    // Add Grid Table Replacement
+                    const table = document.createElement('div');
+                    table.className = 'tests-grid';
+                    table.innerHTML = `
+                        <div class="tests-grid-header">
+                            <div>TEST</div>
+                            <div>RESULT</div>
+                            <div>NORMAL RANGE</div>
+                        </div>
+                        <div class="tests-grid-body"></div>
+                    `;
+                    const tbody = table.querySelector('.tests-grid-body');
+
+                    // Helper to check if result is out of range
+                    function checkAbnormal(resultStr, rangeStr) {
+                        if (!resultStr || !rangeStr || resultStr === '-' || rangeStr === '-') return false;
+
+                        const resultNum = parseFloat(resultStr);
+                        if (isNaN(resultNum)) {
+                            const rText = resultStr.trim().toLowerCase();
+                            const nText = rangeStr.trim().toLowerCase();
+                            if ((nText === 'negative' || nText === 'absent' || nText === 'nil') && rText !== nText) {
+                                return true;
+                            }
+                            return false;
+                        }
+
+                        const rangeStrClean = rangeStr.replace(/,/g, '');
+
+                        // "A - B" or "A-B"
+                        const rangeMatch = rangeStrClean.match(/([\d\.]+)\s*-\s*([\d\.]+)/);
+                        if (rangeMatch) {
+                            if (resultNum < parseFloat(rangeMatch[1]) || resultNum > parseFloat(rangeMatch[2])) return true;
+                            return false;
+                        }
+
+                        // "Up to B", "< B"
+                        const upToMatch = rangeStrClean.match(/(?:up to|<|less than)\s*([\d\.]+)/i);
+                        if (upToMatch) {
+                            if (resultNum > parseFloat(upToMatch[1])) return true;
+                            return false;
+                        }
+
+                        // "> A"
+                        const moreThanMatch = rangeStrClean.match(/(?:>|more than)\s*([\d\.]+)/i);
+                        if (moreThanMatch) {
+                            if (resultNum < parseFloat(moreThanMatch[1])) return true;
+                            return false;
+                        }
+
+                        return false;
+                    }
+
+                    // Add Parameters
+                    groupedDetails[testName].forEach(p => {
+                        if (p.parameter_type === 'widal' && p.result_value) {
+                            try {
+                                const grid = JSON.parse(p.result_value);
+                                const widalRow = document.createElement('div');
+                                widalRow.className = 'tests-grid-row';
+                                widalRow.style.gridTemplateColumns = '100%';
+                                widalRow.innerHTML = `
+                                    <div style="padding-top:15px; font-weight:bold;">${p.parameter_name}</div>
+                                    <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: center; margin-top: 10px;">
+                                        <thead>
+                                            <tr><th style="text-align:left; border: 1px solid black; padding: 5px;">Antigen</th><th style="border: 1px solid black; padding: 5px;">1:20</th><th style="border: 1px solid black; padding: 5px;">1:40</th><th style="border: 1px solid black; padding: 5px;">1:80</th><th style="border: 1px solid black; padding: 5px;">1:160</th><th style="border: 1px solid black; padding: 5px;">1:320</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            ${Object.keys(grid).map(ant => `
+                                                <tr>
+                                                    <td style="text-align:left; border:1px solid black; padding:5px;">${ant}</td>
+                                                    ${[20, 40, 80, 160, 320].map(dil => `<td style="border:1px solid black; padding:5px;">${grid[ant][dil] || '-'}</td>`).join('')}
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                `;
+                                tbody.appendChild(widalRow);
+                            } catch (e) { }
+                        } else {
+                            const tr = document.createElement('div');
+                            tr.className = 'tests-grid-row';
+
+                            const isAbnormal = checkAbnormal(p.result_value, p.normal_range);
+                            const resultClass = isAbnormal ? 'result-col abnormal-result' : 'result-col';
+
+                            tr.innerHTML = `
+                                <div>${p.parameter_name}</div>
+                                <div class="${resultClass}">: ${p.result_value || '-'} ${p.unit ? `<span>${p.unit}</span>` : ''}</div>
+                                <div>${p.normal_range || '-'}</div>
+                            `;
+                            tbody.appendChild(tr);
+                        }
+                    });
+
+                    container.appendChild(table);
+                });
+
+                // Trigger print dialog automatically after slight delay to ensure rendering is complete
+                setTimeout(() => {
+                    window.triggerPrint();
+                }, 1000);
+
+            } catch (err) {
+                console.error(err);
+                alert('Failed to load report data.');
+            }
+        });
+    </script>
+</body>
+
+</html>

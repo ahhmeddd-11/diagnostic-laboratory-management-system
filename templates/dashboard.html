@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Unilab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+    <script src="{{ url_for('static', filename='js/ui.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Top Header (Full Width) -->
+        <header class="top-header">
+            <div class="header-left" style="display: flex; align-items: center; gap: 15px;">
+                <div class="logo-icon small">🔬</div>
+                <h2 style="margin: 0; color: var(--primary); white-space: nowrap; font-size: 1.2rem;">UNILAB Diagnostics</h2>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" style="display: none;">☰</button>
+            </div>
+            <div class="global-search" style="position: relative; flex: 1; max-width: 800px; margin: 0 30px;">
+                <input type="search" id="global-patient-search" placeholder="Quick find patient..." style="background: var(--surface-hover); color: var(--text-primary); border: 1px solid var(--surface-border); border-radius: 20px; padding: 10px 20px; width: 100%; font-size: 0.95rem; outline: none; transition: all 0.2s ease; box-shadow: var(--shadow-sm);">
+            </div>
+            <div class="header-right">
+                <button id="theme-toggle" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; padding: 4px;">🌙</button>
+                <div class="user-profile">
+                    <div class="avatar" id="user-avatar">AD</div>
+                    <div class="user-details">
+                        <span id="user-name">Loading...</span>
+                        <small id="user-role">...</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Middle Section -->
+        <div class="middle-section">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav class="sidebar-links" id="nav-links">
+                    <a href="#" class="nav-item active" data-view="dashboard-view" id="nav-dashboard">
+                        <span class="nav-icon">🏠</span><span class="nav-text">Dashboard</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="patients-view" id="nav-patients">
+                        <span class="nav-icon">👥</span><span class="nav-text">Patients</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="tests-view" id="nav-tests">
+                        <span class="nav-icon">🧪</span><span class="nav-text">Lab Tests</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="packages-view" id="nav-packages">
+                        <span class="nav-icon">📦</span><span class="nav-text">Test Packages</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="reports-view" id="nav-reports">
+                        <span class="nav-icon">📄</span><span class="nav-text">Reports</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="billing-view" id="nav-billing">
+                        <span class="nav-icon">💰</span><span class="nav-text">Billing</span>
+                    </a>
+                    <a href="#" class="nav-item hidden" data-view="users-view" id="nav-users">
+                        <span class="nav-icon">👤</span><span class="nav-text">Users</span>
+                    </a>
+                    <a href="#" class="nav-item hidden" data-view="logs-view" id="nav-logs">
+                        <span class="nav-icon">📋</span><span class="nav-text">Activity Logs</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Main Wrapper -->
+            <div class="main-wrapper">
+                <!-- Main Content -->
+                <main class="main-content">
+                    <div class="view-header" style="margin-bottom: 24px;">
+                        <h2 id="current-view-title" style="margin: 0; font-size: 1.5rem;">Dashboard Overview</h2>
+                    </div>
+
+            <!-- Dashboard View -->
+            <section id="dashboard-view" class="view-section active">
+                <div class="stats-grid">
+                    <div class="stat-card glass-panel">
+                        <h3>Total Patients</h3>
+                        <p class="stat-value" id="stat-patients">-</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3>Pending Reports</h3>
+                        <p class="stat-value" id="stat-reports-pending">-</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3>Available Tests</h3>
+                        <p class="stat-value" id="stat-tests">-</p>
+                    </div>
+                </div>
+
+                <div class="glass-panel" style="margin-top: 24px;">
+                    <div class="toolbar">
+                        <h3 style="margin: 0;">Recently Approved Reports</h3>
+                    </div>
+                    <div class="table-container">
+                        <table id="dashboard-reports-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Patient</th>
+                                    <th>Approved By</th>
+                                    <th>Report Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Patients View -->
+            <section id="patients-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar" style="flex-wrap: wrap; gap: 12px;">
+                        <div style="display: flex; gap: 10px; flex: 1; flex-wrap: wrap;">
+                            <input type="search" id="search-patients" placeholder="Search by name, ID, or doctor..." class="search-input" style="flex: 1; min-width: 200px;">
+                            <input type="date" id="filter-patients-date" class="search-input" style="width: auto;">
+                        </div>
+                        <button class="btn-primary" id="btn-add-patient" style="white-space: nowrap;">+ Add Patient</button>
+                    </div>
+                    <div class="table-container">
+                        <table id="patients-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Age/Gender</th>
+                                    <th>Referred By</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tests View -->
+            <section id="tests-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar" style="flex-wrap: wrap; gap: 12px;">
+                        <input type="search" id="search-tests" placeholder="Search test name or ID..." class="search-input" style="flex: 1; min-width: 200px; max-width: 400px;">
+                        <button class="btn-primary" id="btn-add-test" style="white-space: nowrap;">+ Add Test</button>
+                    </div>
+                    <div class="table-container">
+                        <table id="tests-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Test Profile</th>
+                                    <th>Parameters</th>
+                                    <th>Price (₹)</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Packages View -->
+            <section id="packages-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar" style="flex-wrap: wrap; gap: 12px;">
+                        <input type="search" id="search-packages" placeholder="Search package name..." class="search-input" style="flex: 1; min-width: 200px; max-width: 400px;">
+                        <button class="btn-primary" id="btn-add-package" style="white-space: nowrap;">+ Create Package</button>
+                    </div>
+                    <div class="table-container">
+                        <table id="packages-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Package Name</th>
+                                    <th>Tests Included</th>
+                                    <th>Package Price (₹)</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reports View -->
+            <section id="reports-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar" style="flex-wrap: wrap; gap: 12px;">
+                        <div style="display: flex; gap: 10px; flex: 1; flex-wrap: wrap;">
+                            <input type="search" id="search-reports" placeholder="Search patient name or ID..." class="search-input" style="flex: 1; min-width: 200px;">
+                            <input type="date" id="filter-reports-date" class="search-input" style="width: auto;">
+                            <select id="report-filter" class="select-input" style="width: auto;">
+                                <option value="All">All Status</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Approved">Approved</option>
+                            </select>
+                        </div>
+                        <button class="btn-primary" id="btn-create-report" style="white-space: nowrap;">+ Create Report</button>
+                    </div>
+                    <div class="table-container">
+                        <table id="reports-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Patient</th>
+                                    <th>Status</th>
+                                    <th>Approved By</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Billing View -->
+            <section id="billing-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar">
+                        <h3 style="margin: 0;">Daily Collection & Ledger</h3>
+                    </div>
+                    <div class="stats-grid" style="padding: 20px; margin-bottom: 4px;">
+                        <div class="stat-card" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, transparent 100%); border: 1px solid rgba(16, 185, 129, 0.2); border-left: 4px solid #10b981; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 style="color: #10b981; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 4px;">TOTAL REVENUE</h3>
+                                <p class="stat-value" id="billing-total-revenue" style="margin: 0; font-size: 2.2rem; font-weight: 700;">₹0.00</p>
+                            </div>
+                            <div style="font-size: 2.5rem; opacity: 0.2; line-height: 1;">📈</div>
+                        </div>
+                        <div class="stat-card" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%); border: 1px solid rgba(59, 130, 246, 0.2); border-left: 4px solid #3b82f6; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 style="color: #3b82f6; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 4px;">TOTAL COLLECTED</h3>
+                                <p class="stat-value" id="billing-total-collected" style="margin: 0; font-size: 2.2rem; font-weight: 700;">₹0.00</p>
+                            </div>
+                            <div style="font-size: 2.5rem; opacity: 0.2; line-height: 1;">💳</div>
+                        </div>
+                        <div class="stat-card" style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, transparent 100%); border: 1px solid rgba(239, 68, 68, 0.2); border-left: 4px solid #ef4444; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 style="color: #ef4444; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 4px;">PENDING DUES</h3>
+                                <p class="stat-value" id="billing-total-pending" style="margin: 0; font-size: 2.2rem; font-weight: 700;">₹0.00</p>
+                            </div>
+                            <div style="font-size: 2.5rem; opacity: 0.2; line-height: 1;">⏳</div>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table id="billing-table">
+                            <thead>
+                                <tr>
+                                    <th>Report ID</th>
+                                    <th>Patient</th>
+                                    <th>Date</th>
+                                    <th>Total Amount</th>
+                                    <th>Discount</th>
+                                    <th>Paid</th>
+                                    <th>Balance</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Users View (Admin Only) -->
+            <section id="users-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar">
+                        <h3 style="margin: 0;">User Management</h3>
+                        <button class="btn-primary" id="btn-add-user">+ Create User</button>
+                    </div>
+                    <div class="table-container">
+                        <table id="users-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Joined</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Logs View (Admin Only) -->
+            <section id="logs-view" class="view-section hidden">
+                <div class="glass-panel">
+                    <div class="toolbar">
+                        <h3 style="margin: 0;">System Activity Logs</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0;">Showing last 200 significant actions</p>
+                    </div>
+                    <div class="table-container">
+                        <table id="logs-table">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>User Name</th>
+                                    <th>Action</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        </div> <!-- End main-wrapper -->
+        </div> <!-- End middle-section -->
+
+        <!-- Global Footer -->
+        <footer class="app-footer">
+            <span class="copyright">&copy; 2026 All Rights Reserved</span>
+            <span class="separator">|</span>
+            <span class="developer-credit">Developed by <strong>Syed Ahmed Ali</strong> <span class="badge">Python Fullstack Engineer</span></span>
+            <span class="separator">|</span>
+            <a href="mailto:ahhmeddd.1109@gmail.com" class="footer-email">ahhmeddd.1109@gmail.com</a>
+        </footer>
+    </div> <!-- End app-layout -->
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-top-btn hidden" title="Go to top">↑</button>
+
+    <!-- Modal Base (Reusable) -->
+    <div class="modal hidden" id="dynamic-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Modal Title</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Print Options Modal -->
+    <div class="modal hidden" id="print-modal" style="z-index: 1001;">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3>Print Options</h3>
+                <button class="close-print-modal">&times;</button>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <p>How would you like to print this report?</p>
+                <div style="margin: 15px 0; text-align: left; padding: 10px; background: var(--glass-bg); border-radius: 8px; border: 1px solid var(--surface-border);">
+                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: var(--text-primary);">
+                        <input type="checkbox" id="include-pathologist-sig" checked>
+                        <span>Include Pathologist Signature</span>
+                    </label>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 15px;">
+                    <button class="btn-primary" id="btn-print-with-header" style="flex: 1; background: #475569;">🖨️ With Header</button>
+                    <button class="btn-primary" id="btn-print-no-header" style="flex: 1; background: #64748b;">🖨️ Without Header</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='js/api.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
